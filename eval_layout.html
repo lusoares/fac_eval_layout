@@ -1,6 +1,100 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<style>
+		h1{
+			text-align: center;
+		}
+		h2{
+			display: none;
+			text-align: center;
+		}
+
+		img{
+			max-width: 100%;
+			display:flex;
+
+		}
+
+
+		.images{
+
+		}
+
+		.telephone{
+			display:flex;
+		}
+
+		@media all and (min-width: 769px){
+			.telephone{
+				display:none;
+			}
+			.tablette{
+				display:flex;
+			}
+
+			.images{
+				width:769px;
+			}
+
+
+
+		}
+
+
+		@media all and (min-width: 960px){
+
+			.tablette{
+				display:none;
+			}
+
+			.desktop{
+				display:flex;
+			}
+			.images{
+				width:960px;
+			}
+			.mer{
+				width:50%;
+			}
+			.foret{
+				 width:50%;
+			 }
+			.montagne{
+				width:50%;
+			}
+			.lac{
+				width:50%;
+			}
+		}
+
+
+
+		@media all and (min-width: 1370px){
+			body{
+
+				width:80%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.desktop{
+				display:none;
+			}
+
+			.desktopG{
+				display:flex;
+			}
+			.images{
+				display: flex;
+
+				width:1370px;
+				justify-content: center;
+			}
+
+		}
+
+
+
+
 
 	</style>
 	<head>
@@ -11,12 +105,25 @@
 	</head>
 	<body>
 		<h1 class="txtcenter">Evaluation  Layout</h1>
-		<h2 class="desktopG txtcenter">Vue Desktop > 1370px</h2>
-		<h2 class="desktop txtcenter">Vue Desktop</h2>
-		<h2 class="tablette txtcenter">Vue Tablette à 768px à 970px</h2>
-		<h2 class="telephone txtcenter">Vue Téléphone à 320px</h2>
+		<h2 class="desktopG">Vue Desktop > 1370px</h2>
+		<h2 class="desktop">Vue Desktop</h2>
+		<h2 class="tablette">Vue Tablette à 768px à 970px</h2>
+		<h2 class="telephone">Vue Téléphone à 320px</h2>
 
+		<div class="images">
+			<div class="mer">
+				<img alt ="paysage mer"src="img\mer.jpg">
+			</div>
+			<div class="lac">
+				<img alt ="paysage lac"src="img\lac.jpg">
+			</div >
+			<div class="montagne">
+				<img alt ="paysage montagne"src="img\montagne.jpg">
+			</div>
+			<div class="foret">
+				<img alt ="paysage foret"src="img\foret.jpg">
+			</div>
 
-
+		</div>
 	</body>
 </html>
